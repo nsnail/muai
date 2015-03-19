@@ -2,12 +2,12 @@
 
 ## 测试配置：
 * 内网人员
-    将hosts增加新纪录：
+    将hosts增加新记录：
     `sdk.muai.com 192.168.111.250`
 * 外网人员
     1. 请安装hamachi（https://secure.logmein.com/products/hamachi/download.aspx）
     2. 加入组“muai3”密码“muai3”
-    3. 将hosts增加新纪录：
+    3. 将hosts增加新记录：
         `sdk.muai.com 25.17.56.171`
 
 ## 公共约定
@@ -147,6 +147,21 @@ Name	Code	Comment	Data Type	Length	Precision	Identity	Primary	Foreign Key	Mandat
 rs_tid	rs_tid	帖子id	int			FALSE	TRUE	FALSE	TRUE
 rs_cid	rs_cid	分类id	int			FALSE	TRUE	FALSE	TRUE
 rs_time	rs_time	记录创建时间	datetime			FALSE	FALSE	FALSE	TRUE
+```
+
+---
+
+### 发送验证码
+接口地址：http://sdk.muai.com/app/public_/create_code
+需要登录：否
+输入参数：
+```
+mobile	手机号码
+action	发送原因（8个字符内）
+```
+返回信息：
+```
+无
 ```
 
 ---
