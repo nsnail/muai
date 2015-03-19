@@ -151,21 +151,6 @@ rs_time	rs_time	记录创建时间	datetime			FALSE	FALSE	FALSE	TRUE
 
 ---
 
-### 发送验证码
-接口地址：http://sdk.muai.com/app/public_/create_code
-需要登录：否
-输入参数：
-```
-mobile	手机号码
-action	发送原因（8个字符内）
-```
-返回信息：
-```
-无
-```
-
----
-
 ### 用户提现
 接口地址：http://sdk.muai.com/app/private_/draw
 需要登录：是
